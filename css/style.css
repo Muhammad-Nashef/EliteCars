@@ -1,0 +1,424 @@
+:root{
+    --var-accent-color: #cbab3b;
+    --var-accent-hover: #9e8631;
+    --var-accent-paragraph: #c9b467;
+    --var-overlay-text: #68a7ff;
+}
+
+
+/* Header */
+html,
+body{
+    background-color: #3c3c3c;
+    /*--var-accent-color: #cbab3b;*/
+    /*--var-accent-hover: #9e8631;*/
+    /*--var-accent-paragraph: #c9b467;*/
+    /*--var-overlay-text: #68a7ff;*/
+    font-family: 'Russo One';
+}
+.main-font{
+    font-family: 'Russo One';
+}
+.header{
+    position: relative;
+    height: 2.8rem;
+}
+.dividerHeader{
+    border-bottom: var(--var-accent-color);
+    border-top: transparent;
+    border-right: transparent;
+    border-style: solid;
+    position: relative;
+    top: 20px;
+}
+
+.image-container{
+    float: left;
+
+}
+.main-logo{
+    width: 130px;
+    float: left;
+    filter: sepia(0.6);
+}
+
+.tab-container{
+    position: relative;
+    top: 10px;
+    left: 15px;
+    display: inline-flex;
+    align-items: center;
+    width: 92%;
+}
+
+.tab{
+    font-family: 'Russo One', sans-serif;
+    color: var(--var-accent-color);
+    font-size: 18px;
+    padding: 0px 30px;
+}
+.tab:hover{
+    color: var(--var-accent-hover);
+    cursor: pointer;
+}
+
+.operation-buttons{
+    display: flex;
+}
+.operation-buttons > .user-btn{
+    width: max-content;
+    margin: 0 20px;
+}
+
+#login-icon{
+    color: var(--var-accent-color);
+    position: relative;
+    font-size: 22px;
+    position: absolute;
+    /*top: 25px;*/
+    right: 20px;
+    transform: translateY(-50%);
+}
+#login-icon:hover{
+    color: var(--var-accent-hover);
+    cursor: pointer;
+}
+
+/* Content */
+
+.title{
+    position: absolute;
+    top: 0%;
+    right: 45%;
+    color: var(--var-accent-color);
+}
+.title-container p{
+    position: absolute;
+    text-align: center;
+    top: 15%;
+    right: 12%;
+    
+    font-size: 24px;
+    color: var(--var-accent-paragraph);
+}
+
+.content h2 {
+    font-size: 36px;
+}
+
+.intro{
+    padding-bottom: 0.5rem!important;
+    color: var(--var-accent-paragraph);
+    width: 75ch;
+    margin: auto;
+}
+.content .subtitle {
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.content{
+    width: 99%;
+    /* height: 90%; */
+    height: 100%;
+    top: 60px;
+    margin: 0 auto;
+    position: absolute;
+    /* overflow-y: scroll; */
+}
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: space-evenly;
+    /*top: 40vh;*/
+}
+
+.car-item {
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    background: #494949;
+    border-radius: 30px;
+    box-shadow: 1px 1px 15px #cbab3b;
+    width: 28%; 
+}
+
+.car-item img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: inherit;
+}
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    background-color: rgb(0 0 0 / 62%);
+    transition: height 0.4s ease-out;
+}
+
+.car-item:hover .overlay {
+    height: 50%;
+}
+
+.label {
+    display: inline-block;
+    position: absolute;
+    color: #fff;
+    font-size: 14px;
+}
+.car-specs-list{
+    color: white;
+    position: inherit;
+    top: 40px;
+}
+.car-name-label{
+    position: inherit;
+    top: 3px;
+    left: 10px;
+    color: var(--var-overlay-text);
+}
+.rent-price-label{
+    position: inherit;
+    bottom: 2px;
+    right: 8vw;
+    color: var(--var-overlay-text);
+    right: 10vw;
+    font-size: 20px;
+}
+.buy-price-label{
+    position: inherit;
+    right: 25px;
+    bottom: 2px;
+    color: var(--var-overlay-text);
+    font-size: 20px;
+}
+
+/* Footer */
+.dividerFooter{
+    border-top: var(--var-accent-color);
+    border-bottom: transparent;
+    border-right: transparent;
+    border-style: solid;
+    position: absolute;
+    /*bottom: 15vh;*/
+    width: 100%;
+}
+.footer{
+    display: inline-flex;
+    position: absolute;
+    /*left: 20%;*/
+    /*width: 80%;*/
+    /*bottom: -15vh;*/
+    padding-bottom: 10px;
+}
+.contact-us-request {
+    margin-bottom: 20px;
+    color: var(--var-accent-color);
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    position: relative;
+    text-align: center;
+    /*width: fit-content;*/
+    /*left: 41%;*/
+    /*top: -90px;*/
+}
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: -webkit-fill-available;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+    width: inherit;
+    padding: 0px 10px;
+    border-radius:10px;
+    border: 1px solid #eeeeee3b;
+    transition: .3s border-color;
+}
+.input-group:hover {
+    border: 1px solid #cbab3ba1;
+}
+.input-group label {
+    width: 100px;
+    color: var(--var-accent-color);
+}
+input {
+    display:block;
+    width:100%;
+    margin:10px 0;
+    padding: 10px 50px 8px 10px;
+}
+.input-group input,
+.input-group textarea {
+    flex: 1;
+    margin-left: -15px;
+}
+
+/*label[for=EmailInput]{
+    margin-left: 20px;
+}*/
+
+.submit-request {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+}
+
+.submit-request p{
+    margin: 3px 30px;
+    color: var(--var-accent-color);
+}
+
+#sendBtn{
+    color: #ffffff;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.request-text{
+    position: relative;
+    top: 7px;
+    left: 30px
+}
+
+#sendBtn {
+    position: relative;
+    backface-visibility: hidden;
+    background: var(--var-accent-color);
+    border: 0;
+    border-radius: .375rem;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Circular,Helvetica,sans-serif;
+    font-size: 1.125rem;
+    font-weight: 700;
+    letter-spacing: -.01em;
+    line-height: 1.3;
+    padding: 1rem 1.25rem;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transform: translateZ(0) scale(1);
+    transition: transform .2s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+#sendBtn:disabled {
+    color: #787878;
+    cursor: auto;
+}
+
+#sendBtn:not(:disabled):hover {
+    background-color: var(--var-accent-hover);
+    transform: scale(1.05);
+}
+
+#sendBtn:not(:disabled):hover:active {
+    transform: scale(1.05) translateY(.125rem);
+}
+
+#sendBtn:focus {
+    outline: 0 solid transparent;
+}
+
+#sendBtn:focus:before {
+    border-width: .125rem;
+    content: "";
+    left: calc(-1*.375rem);
+    pointer-events: none;
+    position: absolute;
+    top: calc(-1*.375rem);
+    transition: border-radius;
+    user-select: none;
+}
+
+#sendBtn:focus:not(:focus-visible) {
+    outline: 0 solid transparent;
+}
+
+#sendBtn:not(:disabled):active {
+    transform: translateY(.125rem);
+}
+
+
+.contact-info{
+    color: var(--var-accent-color);
+    display: grid;
+    padding: 33px 15px;
+    border: 1px solid #808080a6;
+    border-radius: 15px;
+    width: auto;
+}
+.contact-info:hover {
+    border: 1px solid #cbab3ba1;
+}
+.our-email{
+    padding-bottom: 30px;
+    letter-spacing: 1.5px;
+}
+.our-phone{
+    margin: 0 auto;
+}
+
+/* Login Page CSS */
+/* .login-container{
+
+} */
+.login-container > h2{
+    color: var(--var-accent-color);
+}
+
+.btn-show-currency{
+    backface-visibility: hidden;
+    background: var(--var-accent-color);
+    border: 0;
+    border-radius: 0.375rem;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Circular,Helvetica,sans-serif;
+    font-size: 1.125rem;
+    font-weight: 700;
+    letter-spacing: -.01em;
+    line-height: 1.3;
+    padding: 1rem 1.25rem;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transform: translateZ(0) scale(1);
+    transition: transform .2s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+.btn-show-currency:hover{
+    background-color: var(--var-accent-hover);
+    transform: scale(1.05);
+}

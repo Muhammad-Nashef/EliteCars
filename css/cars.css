@@ -1,0 +1,198 @@
+
+/* .car-card {
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+    margin-bottom: 20px;
+    border: 1px solid;
+} */
+
+/* .car-image {
+    height: 200px;
+    width: 300px;
+    background-size: cover;
+    background-position: center;
+} */
+
+
+
+/* .car-info h2 {
+    font-size: 24px;
+    margin-top: 0;
+    color: #b1a868;
+}
+
+.car-info p {
+    margin: 0;
+} */
+
+html,
+body{
+    --var-overlay-text: #68a7ff;
+    user-select: none;
+}
+
+
+.content-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+}
+#container{
+    top: 15vh !important;
+    padding-bottom: 10rem;
+}
+
+.car-info {
+    margin-left: 20px;
+}
+
+.label{
+    font-size: 17px;
+}
+
+.buy-price-label{
+    font-size: 17px;
+}
+
+.car-item{
+    width: 28% !important;
+    margin-bottom: 4ch;
+}
+
+.car-item:hover .overlay {
+    height: 30% !important;
+}
+
+.car-name-label{
+    margin: 9px 0px;
+    color: var(--var-accent-paragraph);
+}
+
+.car-specs-list{
+    margin: -18px -13px;
+}
+
+.prices-container{
+    display: flex;
+    width: max-content;
+    margin: 1rem 0;  
+}
+.rent-price-label{
+    color: var(--var-accent-paragraph);
+    font-size: 16px !important;
+}
+
+.buy-price-label{
+    color: var(--var-accent-paragraph);
+    padding: 0px 1.2rem;
+    font-size: 16px !important;
+}
+
+.overlay{
+    height: 0%;
+}
+.title{
+    right: 43% !important;
+}
+.add-to-cart-form{
+    position: relative;
+    top: 1rem;
+    left: 21rem;
+    width: fit-content;
+    margin: 0;
+}
+.add-to-cart-button{
+    background-color: #d9d9d9;
+    color: #9a8c4f;
+    padding: 5px;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    width: 60%;
+    margin: auto 2.5rem;
+    position: relative;
+    left: 3em;
+    z-index: 3;
+}
+.info-container{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    top: 1.5ch;
+    left: -1rem;
+}
+
+.road,
+.money,
+.calendar,
+.power,
+.gauge,
+.info{
+    width: 30px;
+    position: relative;
+    top: 5px;
+    margin-right: 5px;
+}
+.gauge{
+    position: relative;
+    top: 5px;
+    margin-right: 7px;
+}
+.submit-payment-btn{
+    background: transparent;
+    color: var(--var-accent-paragraph);
+    font-size: inherit;
+    font-family: 'Russo One' !important;
+    border: 0;
+    position: relative;
+    left: -5px;
+    cursor: pointer;
+}
+.submit-btn-divider{
+    padding: 0px 2px 0px 8px;
+}
+.payment-info{
+    padding-top: 3em;
+    margin-left: 13ch;
+    width: fit-content;
+    color: #dc8e1a;
+    font-style: italic;
+    font-size: 14px;
+    display: flex;
+    align-items: flex-end;
+}
+
+@media screen and (max-width: 1366){
+    .add-to-cart-form{
+        left: 12rem;
+    }
+    .car-item:hover .overlay {
+        height: 40% !important;
+    }
+    .rent-price-label{
+        font-size: 14px !important;
+    }
+    .buy-price-label{
+        font-size: 14px !important;
+    }
+}
+
+#sponsers_logo{
+    text-align: center;
+    position: relative;
+    z-index: 999;
+}
+
+.sponsor-logo{
+    width: 45px;
+    height: 50px;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: transform 1s;
+}
+
+.sponsor-logo:hover{
+    transform: scale(1.2);
+}
